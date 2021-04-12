@@ -20,7 +20,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 Hi {}, my name is {}! if you have any questions about how to use me please give me /help... 
 
-I am a group manager bot created by  [yehh jadu hai jinn ka]({}).
+I am a group manager bot created by  [yehh jadu hai jinn ka](@{}).
 
 For more commands click /help...
 
@@ -133,7 +133,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN)
     else:
-        update.effective_message.reply_text("waked up💖")
+        update.effective_message.reply_text("welcome")
 
 
 # for test purposes
